@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="TXT-PDF.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="website-icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="design-circle-1"></div>
+    <div class="design-circle-2"></div>
+    <img class="box" src="box.png" alt="box" />
+    <div class="header">
+      <div class="website-title">
+        <svg
+          class="website-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <path d="M0 0H16V16H0V0Z" fill="#E26565" />
+          <path
+            d="M0.888672 0.888916H7.99978V8.00003H0.888672V0.888916Z"
+            fill="white"
+          />
+          <path d="M8 8H15.1111V15.1111H8V8Z" fill="white" />
+        </svg>
+        <p class="website-name">NyanCat</p>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">HOME</a></li>
+        <li class="header-underline"><a href="TXT-PDF.html">TXT to PDF</a></li>
+        <li><a href="PDF-TXT.html">PDF to TXT</a></li>
+      </ul>
+    </div>
+
+    <div class="title-color">
+      <h1 class="title-size">Convert your TXT to PDF</h1>
+      <p class="title-description-size">
+        If you wondered how to convert your .Txt file to PDF format, you can't
+        go wrong with NyanCat.
+      </p>
+    </div>
+    <div class="upload-box-flex">
+      <div class="upload-box">
+        <div id="upload-box-done">
+          <svg
+            class="upload-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="57"
+            height="41"
+            viewBox="0 0 57 41"
+            fill="none"
+          >
+            <path
+              d="M47.88 18.1812C48.2452 17.2282 48.45 16.1862 48.45 15.0996C48.45 10.3793 44.6203 6.54961 39.9 6.54961C38.1455 6.54961 36.5067 7.08398 35.153 7.99242C32.6859 3.71742 28.0814 0.849609 22.8 0.849609C14.9269 0.849609 8.55 7.22648 8.55 15.0996C8.55 15.3401 8.55891 15.5805 8.56781 15.821C3.58031 17.5755 0 22.3315 0 27.9246C0 35.0051 5.74453 40.7496 12.825 40.7496H45.6C51.8967 40.7496 57 35.6463 57 29.3496C57 23.8366 53.0812 19.2321 47.88 18.1812ZM35.0372 23.6496H29.2125V33.6246C29.2125 34.4084 28.5712 35.0496 27.7875 35.0496H23.5125C22.7287 35.0496 22.0875 34.4084 22.0875 33.6246V23.6496H16.2628C14.9892 23.6496 14.3569 22.1177 15.2564 21.2182L24.6436 11.831C25.1958 11.2788 26.1042 11.2788 26.6564 11.831L36.0436 21.2182C36.9431 22.1177 36.3019 23.6496 35.0372 23.6496Z"
+              fill="#1F7FF0"
+            />
+          </svg>
+          <form
+            id="summon-hamster"
+            action="convertTXT.php"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <label for="file" class="upload-instruction">
+              Drag & drop your files here or
+              <input
+                type="file"
+                id="file"
+                name="file[]"
+                accept=".pdf, .txt"
+                style="display: none"
+                multiple
+              />
+              <span class="upload-instruction-choose">choose a file</span>
+            </label>
+            <p class="upload-maximum">Once converted, auto downloaded.</p>
+            <input
+              class="convert-button"
+              type="submit"
+              value="Convert"
+              name="submit"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="file-list" class="file-list"></div>
+    <script src="TXT-PDF.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="website-icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="design-circle-1"></div>
+    <div class="design-circle-2"></div>
+    <img class="box" src="box.png" alt="box" />
+    <div class="header">
+      <div class="website-title">
+        <svg
+          class="website-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <path d="M0 0H16V16H0V0Z" fill="#E26565" />
+          <path
+            d="M0.888672 0.888916H7.99978V8.00003H0.888672V0.888916Z"
+            fill="white"
+          />
+          <path d="M8 8H15.1111V15.1111H8V8Z" fill="white" />
+        </svg>
+        <p class="website-name">NyanCat</p>
+      </div>
+      <ul class="nav-list">
+        <li class="header-underline"><a href="index.html">HOME</a></li>
+        <li><a href="TXT-PDF.html">TXT to PDF</a></li>
+        <li><a href="PDF-TXT.html">PDF to TXT</a></li>
+      </ul>
+    </div>
+
+    <div class="title-color">
+      <h1 class="title-size">PDF, or TXT?</h1>
+      <p class="title-description-size">
+        You can't go wrong with NyanCat to convert your file from PDF to TXT, or
+        vice versa.
+      </p>
+    </div>
+
+    <div class="box-to-choose-flex">
+      <div class="box-to-choose">
+        <div class="button-box">
+          <a href="PDF-TXT.html" class="button">PDF to TXT</a>
+          <a href="TXT-PDF.html" class="button">TXT to PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-view-team">
+      <button
+        class="btn"
+        onclick="document.getElementById('team-introduction').scrollIntoView({ behavior: 'smooth' });"
+      >
+        <i class="animation"></i>
+        View Team
+        <i class="animation"></i>
+      </button>
+    </div>
+
+    <div class="Teammate-container-outest">
+      <div class="Teammate-container" id="team-introduction">
+        <p class="team-greeting">Meet NyanCat</p>
+        <p class="team-description">
+          A group of four undergraduate students from the School of Computer
+          Sciences, Universiti Sains Malaysia
+        </p>
+        <div class="teammate-photos-desctiption">
+          <div>
+            <img
+              class="teammate-image"
+              src="images/yijian.png"
+              alt="teammate1"
+            />
+            <p class="teammate-name">Chong Yi Jian</p>
+            <p class="teammate-number">164364</p>
+          </div>
+
+          <div>
+            <img
+              class="teammate-image"
+              src="images/anson.png"
+              alt="teammate1"
+            />
+            <p class="teammate-name">Anson Kiu Yi Kai</p>
+            <p class="teammate-number">164554</p>
+          </div>
+
+          <div>
+            <img
+              class="teammate-image"
+              src="images/tingjuin.png"
+              alt="teammate1"
+            />
+            <p class="teammate-name">Lim Ting Juin</p>
+            <p class="teammate-number">163634</p>
+          </div>
+
+          <div>
+            <img class="teammate-image" src="images/leon.png" alt="teammate1" />
+            <p class="teammate-name">Leon Then Leong Onn</p>
+            <p class="teammate-number">163202</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
